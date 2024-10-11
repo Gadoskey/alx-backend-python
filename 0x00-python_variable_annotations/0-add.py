@@ -4,14 +4,6 @@
   Simple Addition Function
 
   Author: Yusuf Mustapha Opeyemi
-
-  This function takes two floats as input and returns their sum.
-
-  Parameters:
-    a: The first floating-point number.
-    b: The second floating-point number.
-
-  Returns: The sum of `a` and `b`.
 '''
 
 
