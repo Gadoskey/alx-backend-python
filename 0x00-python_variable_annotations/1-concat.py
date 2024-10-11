@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 '''
-  Simple Addition Function
+  Simple Concat Function
 
   Author: Yusuf Mustapha Opeyemi
 '''
