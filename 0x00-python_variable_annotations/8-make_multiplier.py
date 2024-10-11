@@ -13,7 +13,7 @@ def make_multiplier(multiplier: float) -> Callable[[float], float]:
        Returns a function that multiplies a float by multiplier.
     '''
     def mul(number: float) -> float:
-      ''' Mulitiplies a float by multipler '''
-      return float(number * multiplier)
+        ''' Mulitiplies a float by multipler '''
+        return float(number * multiplier)
     
     return mul
