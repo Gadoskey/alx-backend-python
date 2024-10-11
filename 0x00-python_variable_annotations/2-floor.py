@@ -6,6 +6,7 @@
   Author: Yusuf Mustapha Opeyemi
 '''
 
+
 import math
 
 def floor(n: float) -> int:
