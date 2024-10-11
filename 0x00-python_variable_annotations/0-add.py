@@ -1,6 +1,4 @@
 #!/usr/bin/env python3
-
-
 """
 Simple Addition Function
 
@@ -14,6 +12,7 @@ Parameters:
 
 Returns: The sum of `num1` and `num2`.
 """
+
 
 def add(num1: float, num2: float) -> float:
     # Adds num1 and num2 together and returns the result of the addition
