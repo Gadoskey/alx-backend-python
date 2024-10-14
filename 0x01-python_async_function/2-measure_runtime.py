@@ -9,7 +9,7 @@
 import time
 import asyncio
 
-# importing wait_random
+# importing wait_n
 wait_n = __import__('1_concurrent_coroutines').wait_n
 
 
