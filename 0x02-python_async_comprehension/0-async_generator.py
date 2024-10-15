@@ -21,9 +21,9 @@ def async_generator() -> Generator[float, None, None]:
         none
 
     Returns:
-        float:A nNumber between 0 and 10.
+        float:A number between 0 and 10.
     '''
     # The coroutine will loop 10 times
     for i in range(10):
-        await sleep(1)
-        yield uniform(0, 10)
+      await sleep(1)
+      yield uniform(0, 10)
