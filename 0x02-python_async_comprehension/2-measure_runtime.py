@@ -13,7 +13,7 @@ from time import time
 async_comprehension = __import__('1-async_comprehension').async_comprehension
 
 
-def measure_runtime() -> float:
+async def measure_runtime() -> float:
     '''
     Function measure_runtime that takes no arguments.
     The coroutine will execute async_comprehension

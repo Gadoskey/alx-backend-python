@@ -11,7 +11,7 @@ from random import uniform
 from typing import Generator
 
 
-def async_generator() -> Generator[float, None, None]:
+async def async_generator() -> Generator[float, None, None]:
     '''
     Function async_generator that takes no arguments.
     The coroutine will loop 10 times, each time asynchronously wait 1 second,
@@ -25,5 +25,5 @@ def async_generator() -> Generator[float, None, None]:
     '''
     # The coroutine will loop 10 times
     for i in range(10):
-      await sleep(1)
-      yield uniform(0, 10)
+        await sleep(1)
+        yield uniform(0, 10)
