@@ -25,5 +25,5 @@ def async_generator() -> Generator[float, None, None]:
     '''
     # The coroutine will loop 10 times
     for i in range(10):
-      await sleep(1)
-      yield uniform(0, 10)
+        await sleep(1)
+        yield uniform(0, 10)
