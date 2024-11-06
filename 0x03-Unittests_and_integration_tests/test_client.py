@@ -21,8 +21,8 @@ class TestGithubOrgClient(unittest.TestCase):
     def test_org(self, org_name, mock_get_json):
         """Test that GithubOrgClient.org returns the correct value."""
         # Set up the mock return value for get_json
-        expected_response = {"name": org_name, "repos_url"
-                            : f"https://api.github.com/orgs/{org_name}/repos"}
+        expected_response = {"name": org_name, "repos_url": 
+          f"https://api.github.com/orgs/{org_name}/repos"}
         mock_get_json.return_value = expected_response
 
         # Initialize GithubOrgClient and call the org method
