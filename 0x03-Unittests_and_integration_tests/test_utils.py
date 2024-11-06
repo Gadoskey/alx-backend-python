@@ -47,18 +47,18 @@ class TestGetJson(unittest.TestCase):
     @patch("utils.requests.get")
     def test_get_json(self, test_url, test_payload, mock_get):
         """Test that get_json returns the expected result."""
-        
+
         """Configure the mock to return a response with a
         .json() method that returns test_payload
         """
         mock_response = Mock()
         mock_response.json.return_value = test_payload
         mock_get.return_value = mock_response
-        
+
         # Call get_json and verify the result
         result = get_json(test_url)
         self.assertEqual(result, test_payload)
-        
+
         # Verify requests.get was called exactly once with test_url
         mock_get.assert_called_once_with(test_url)
 
@@ -66,7 +66,7 @@ class TestGetJson(unittest.TestCase):
 class TestMemoize(unittest.TestCase):
     """Test case for the memoization decorator."""
 
-    class TestClass:        
+    class TestClass:
         def a_method(self):
             return 42
 
@@ -75,11 +75,12 @@ class TestMemoize(unittest.TestCase):
             return self.a_method()
 
     def test_memoize(self):
-        """Test that a_property calls a_method only once, even if accessed twice."""
+        """Test that a_property calls a_method only once"""
         test_instance = self.TestClass()
 
         # Mock a_method to track the number of times it’s called
-        with patch.object(test_instance, 'a_method', return_value=42) as mock_method:
+        with patch.object(
+          test_instance, 'a_method', return_value=42) as mock_method:
             # Call a_property twice
             result1 = test_instance.a_property
             result2 = test_instance.a_property
